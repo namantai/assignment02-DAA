@@ -19,7 +19,7 @@ public class DynamicArray {
     }
     public void add(int x){
         if(arr.length == size){
-            int[] newArr = new int[2*size];
+            int[] newArr = new int[arr.length * 2];
             for(int i=0; i<size; i++){
                 newArr[i] = arr[i];
 
@@ -36,7 +36,7 @@ public class DynamicArray {
             throw new IndexOutOfBoundsException();
         }
         if(arr.length==size){
-            int[] newArr = new int[2*size];
+            int[] newArr = new int[arr.length * 2];
             for(int i=0; i<size; i++){
                 newArr[i] = arr[i];
 
